@@ -1,5 +1,5 @@
-name: influxdb-ijohnson
-version: '1.7.5'
+name: ammp-influxdb
+version: '1.7.7'
 base: core18
 summary: An Open-Source Time Series Database
 description: |
@@ -19,7 +19,7 @@ parts:
       - bin
   influxdb:
     source: https://github.com/influxdata/influxdb.git
-    source-tag: v1.7.5
+    source-tag: v1.7.7
     build-snaps: ["go"]
     source-depth: 1
     plugin: python

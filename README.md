@@ -1,3 +1,3 @@
 ### InfluxDB Snap
 
-[![Snap Status](https://build.snapcraft.io/badge/anonymouse64/influxdb-snap.svg)](https://build.snapcraft.io/user/anonymouse64/influxdb-snap)
+[![Snap Status](https://build.snapcraft.io/badge/ammpio/ammp-influxdb.svg)](https://build.snapcraft.io/user/ammpio/ammp-influxdb)
