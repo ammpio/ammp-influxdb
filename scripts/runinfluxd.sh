@@ -4,4 +4,10 @@ set -e
 export INFLUXDB_META_DIR=$SNAP_DATA/meta
 export INFLUXDB_DATA_DIR=$SNAP_DATA/data
 export INFLUXDB_DATA_WAL_DIR=$SNAP_DATA/wal
-$SNAP/bin/influxd -config $SNAP_DATA/conf/influxdb.conf
+export INFLUXDB_HTTP_BIND_ADDRESS="127.0.0.1:8086"
+export INFLUXDB_DATA_INDEX_VERSION="tsi1"
+export INFLUXDB_MONITOR_STORE_ENABLED="false"
+export INFLUXDB_SUBSCRIBER_ENABLED="false"
+export INFLUXDB_CONTINUOUS_QUERIES_ENABLED="false"
+
+$SNAP/bin/influxd -config $SNAP/conf/influxdb.conf
