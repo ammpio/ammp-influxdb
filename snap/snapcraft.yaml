@@ -68,3 +68,10 @@ apps:
     plugs:
       - network-bind
       - network
+  initdb:
+    command: bin/initdb.sh
+    daemon: oneshot
+    plugs:
+      - network
+    after:
+      - influxd
