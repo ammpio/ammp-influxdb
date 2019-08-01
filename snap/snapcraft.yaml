@@ -9,6 +9,10 @@ description: |
 grade: stable
 confinement: strict
 
+architectures:
+  - build-on: armhf
+  - build-on: amd64
+
 parts:
   scripts:
     source: scripts
