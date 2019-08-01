@@ -10,8 +10,8 @@ grade: stable
 confinement: strict
 
 architectures:
-  - build-on: armhf
   - build-on: amd64
+  - build-on: armhf
 
 parts:
   scripts:
