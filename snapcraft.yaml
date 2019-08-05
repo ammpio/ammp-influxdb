@@ -78,3 +78,9 @@ apps:
       - network
     after:
       - influxd
+
+plugs:
+  provisioning-influx:
+    interface: content
+    content: ammp-influx-provisioning
+    target: $SNAP/provisioning
