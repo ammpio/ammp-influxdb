@@ -14,13 +14,12 @@ architectures:
   - build-on: armhf
 
 parts:
-  scripts:
-    source: scripts
+  wrapper-scripts:
     plugin: dump
+    source: bin
     organize:
-      '*.sh': bin/
-    prime:
-      - bin
+      runinfluxd.sh: bin/runinfluxd.sh
+      initdb.sh: bin/initdb.sh
   influxdb:
     source: https://github.com/influxdata/influxdb.git
     source-tag: v1.7.7

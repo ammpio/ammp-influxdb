@@ -1,4 +1,1 @@
-
-*.bz2
-
-*.snap
+.DS_Store
